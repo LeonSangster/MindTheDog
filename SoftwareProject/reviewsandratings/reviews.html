@@ -1,1 +1,51 @@
+<!DOCTYPE html>
 
+<html>
+<head>
+    <title>Ratings and Reviews</title>
+    <link rel = "stylesheet" href = "../main.css">
+    <script src = "reviewScript.js"></script>
+    
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar">
+            <label class="Logo"><a href="../homepage/Homepage.html">MindThePet</a></label>
+            <a href="#"  class="Toggle-btn">
+                <span class="Bar"></span>
+                <span class="Bar"></span>/
+                <span class="Bar"></span>//
+            </a>
+            <div class="navbar-Links">
+                <ul>
+                    <li><a href="../homepage/Homepage.html">Home</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="../aboutus/AboutUs.html">About Us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="../report/Report.html">Misconduct</a></li>
+                    <li class="navbar__btn "><a href="../login/login.html" class=button>Sign-in</a></li>
+                    <li class = "navbar__btn"><a href = "../signup/signUp.html" class = "button">Sign-up</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class = "form-inputter">
+        <form>
+            <label for = "rating">Rating</label>
+            <input type = "number" id = "rating" name = "rating" min ="1" max = "5"><br><br>
+            <label for = "review">Review</label><br>
+            <textarea id = "review" name = "review" rows = "4" cols = "50"></textarea><br><br>
+            <input type = "submit" value = "submit"></input>
+            
+        </form>
+
+
+    </div>
+
+    
+</body>
+</html>
