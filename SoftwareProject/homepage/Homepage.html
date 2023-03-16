@@ -4,6 +4,7 @@
 <head>
     <title>Mind The Pet Homepage</title>
     <link rel = "stylesheet" href = "homepage1.css">
+    <script src = "homeScript.js"></script>
 </head>
 
 <body>
@@ -22,35 +23,72 @@
                     <li><a href="#">Our Services</a></li>
                     <li><a href="AboutUs.html">About Us</a></li>
                     <li><a href="#">Contact us</a></li>
+                    <li><button class = "button-main"><a href = "signUp.html">Sign Up</a></button></li>
+                    <li><button class = "button-main"><a href = "login.html">Log in</a></button></li>
                 </ul>
         </nav>
     </header>
 
     <div>
-        <p id ="intro">Welcome to Mind The Pet!</p>
-        <br>
 
-        <section id = "sign-up">
-        <p>New here? Sign up for an account!</p>
-        <button class = "button">Sign up</button>
-        </section>
-        <br>
+        <h3>Welcome to Mind The Pet!</h3>
+    </div>
 
-        <section id ="login">
+    <div class = "reviews">
 
-        <p>Returning member? Log in here!</p>
-        <button class = "button">Log in</button>
-        </section>
+        <div class = "review-item">
+            <h1>A Great Experience</h1>
+    
+            <p>
+                I would definitely recommend Mind The Pet, I have a pet who has particular needs and Mind The Pet handled those needs exceptionally.
+            </p>
+    
+        </div>
+    
+        <div class = "review-item">
+            <h1>Would definitely recommend</h1>
+    
+            <p>
+                If you don't have time to look after your pets, Mind The Pet can definitely help you out, their services are affordable and they get the job done!
+            </p>
+        </div>
 
+        <div class = "review-item">
+            <h1>Booking Appointments has never been easier</h1>
 
-        
+            <p>
+                My life has become a lot easier since I first started using Mind The Pet, they have everything available to help out every kind of pet owner!
+            </p>
+        </div>
+
+        <div class = "review-button">
+            <button class = "button-main" id = "prev" onclick = "previous()">Previous</button>
+            <button class = "button-main" id = "next" onclick = "next()">Next</button>
+        </div>
+
 
     </div>
     <br>
 
+    <div id ="privileges">
+        <h2>Perks of being a member?</h2>
+
+        <section id = "privilege-content">
+
+            <figure>
+                <img src = "appointment.png"  height = "250" ></img>
+                <h3>Book Appointments with Pet-Minders</h3>
+            </figure>
 
 
-    <div>
+        </section>
+
+
+    </div>
+
+
+
+    <div id = "foo">
         <footer>
             <h6>Contact Group 21 for any queries</h6>
         </footer>
