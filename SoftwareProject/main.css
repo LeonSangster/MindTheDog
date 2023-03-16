@@ -209,3 +209,88 @@ button
     transform: translateY(2px);
   }
   
+
+  /*__________________________HOMEPAGE CSS___________________ */
+
+  #foot{
+    margin-top:20%;
+    border-top:3px solid black;
+}
+
+#privileges h2{
+    border-bottom:2px solid black;
+}
+
+#privilege-content, #privilege-content2{
+    color: blue;
+}
+
+.reviews{
+  background: rgb(105, 114, 105);
+  height: auto;
+  width: 270px;
+  border-radius: 15px;
+  margin: auto;
+  padding: 10px;
+  margin-top: 30px;
+  box-shadow: gold;
+  color: white;
+  align-items: center;
+}
+
+.review-item {
+    align-items: center;
+    justify-content: space-evenly;
+    width: 250px;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .review-item h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+  }
+
+  .review-item p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+  }
+
+  .review-button {
+    text-align: center;
+    padding: 10px;
+  }
+
+  
+
+  .review-item {
+    display: none;
+  }
+
+  #privilege-content, #privilege-content2{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+  #privilege-content figure,#privilege-content2 figure{
+    flex-basis: 23%;
+    margin-bottom: 20px;
+    text-align:center;
+  }
+
+  #privilege-content figure img, #privilege-content2 figure img{
+    max-width:100%;
+  }
+
+  .review-message{
+    background-color: #ffcc00; /* set background color */
+  color: #fff; /* set font color */
+  padding: 10px; /* add padding */
+  text-align: center; /* center text */
+  margin-bottom: 20px; /* add margin to separate from review content */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
