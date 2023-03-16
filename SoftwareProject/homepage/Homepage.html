@@ -3,7 +3,7 @@
 
 <head>
     <title>Mind The Pet Homepage</title>
-    <link rel = "stylesheet" href = "homepage1.css">
+    <link rel = "stylesheet" href = "../main.css">
     <script src = "homeScript.js"></script>
 </head>
 
@@ -11,21 +11,23 @@
 
     <header>
         <nav class="navbar">
-            <label class="Logo"><a href="#">MindThePet</a></label>
+            <label class="Logo"><a href="HomePa/">MindThePet</a></label>
             <a href="#"  class="Toggle-btn">
                 <span class="Bar"></span>
-                <span class="Bar"></span>
-                <span class="Bar"></span>
+                <span class="Bar"></span>/
+                <span class="Bar"></span>//
             </a>
             <div class="navbar-Links">
                 <ul>
-                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#">Our Services</a></li>
-                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact us</a></li>
-                    <li><button class = "button-main"><a href = "signUp.html">Sign Up</a></button></li>
-                    <li><button class = "button-main"><a href = "login.html">Log in</a></button></li>
+                    <li><a href="SoftwareProject/Report.html">Misconduct</a></li>
+                    <li class="navbar__btn "><a href="#" class=button>Sign-in</a></li>
+                    <li class = "navbar__btn"><a href = "" class = "button">Sign-up</a></li>
                 </ul>
+            </div>
         </nav>
     </header>
 
@@ -34,7 +36,14 @@
         <h3>Welcome to Mind The Pet!</h3>
     </div>
 
+    
+
     <div class = "reviews">
+
+        <div class = "review-message">
+
+            <p>Take a look at our reviews!</p>
+        </div>
 
         <div class = "review-item">
             <h1>A Great Experience</h1>
@@ -61,6 +70,14 @@
             </p>
         </div>
 
+        <div class = "review-item">
+            <h1>Excellent customer service!</h1>
+
+            <p>
+                I had to reschedule an appointment due to personal circumstances and the way Mind The Pet handled the changes made were exceptional! They were very accomodating and understanding, I now know that if I have trouble looking after my pets, Mind The Pet will always be able to help out!
+            </p>
+        </div>
+
         <div class = "review-button">
             <button class = "button-main" id = "prev" onclick = "previous()">Previous</button>
             <button class = "button-main" id = "next" onclick = "next()">Next</button>
@@ -71,24 +88,55 @@
     <br>
 
     <div id ="privileges">
-        <h2>Perks of being a member?</h2>
+        <h2>Perks of being a registered user?</h2>
 
         <section id = "privilege-content">
 
-            <figure>
+            <figure id = "appointments">
                 <img src = "appointment.png"  height = "250" ></img>
                 <h3>Book Appointments with Pet-Minders</h3>
             </figure>
 
+            <figure id = "messaging">
+                <img src = "Messaging.png" height = "250">
+                <h3>Message one-to-one with pet-minders!</h3>
+            </figure>
 
+            <figure id = "gps-tracker">
+                <img src = "https://cdn-icons-png.flaticon.com/512/439/439902.png" height = "250">
+                <h3>Built in GPS to track your pets!</h3>
+            </figure>
+
+            
         </section>
+        
+        <section id = "privilege-content2">
+
+            <figure id = "multiple-pets">
+                <img src = "https://www.freeiconspng.com/thumbs/dog-png/dog-png-30.png" height = "250">
+                <h3>Multiple pets can be looked after</h3>
+            </figure>
+
+            <figure id = "confidential">
+                <img src = "https://static.vecteezy.com/system/resources/thumbnails/012/042/292/small/warning-sign-icon-transparent-background-free-png.png" height = "250">
+                <h3>File reports on any disputes you may have</h3>
+
+            </figure>
+
+            <figure id = "money">
+                <img src = "https://www.freeiconspng.com/thumbs/money-png/money-png-12.png" height = "250">
+                <h3>Earn money as a pet-minder!</h3>
+            </figure>
+        </section>
+
+
 
 
     </div>
 
 
 
-    <div id = "foo">
+    <div id = "foot">
         <footer>
             <h6>Contact Group 21 for any queries</h6>
         </footer>
