@@ -294,3 +294,31 @@ button
   margin-bottom: 20px; /* add margin to separate from review content */
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
+
+  /*_____________CSS FOR REVIEWS AND RATINGS_________________ */
+
+  #review-text,#subjectReview{
+    background-color: grey;
+    color:white;
+  }
+
+  #review-text::placeholder, #subjectReview::placeholder{
+    color :white;
+  }
+
+  #review-submit{
+    background-color:black;
+  }
+
+  .form-inputter{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+  }
+
+  .form-inputter form{
+    width:50%;
+  }
+
+  
