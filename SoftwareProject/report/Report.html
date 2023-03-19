@@ -6,6 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Report.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAV4yBh6-EN0eZpDV1j7PVEknVhJ3iPBEU",
+          authDomain: "mindthedog-950a5.firebaseapp.com",
+          projectId: "mindthedog-950a5",
+          storageBucket: "mindthedog-950a5.appspot.com",
+          messagingSenderId: "27194168070",
+          appId: "1:27194168070:web:2d9c65c5486f0f0bf84487",
+          measurementId: "G-SY6YZ850BX"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+
+        function writeData() {
+            firebase.database().ref("User").set({
+                Reporter_Name: document.getElementById("Reporter_Name").value,
+                Reporter_Email : document.getElementById("Reporter_Email").value,
+                username: document.getElementById("Reporter_Username").value,
+                Reporter_Username: document.getElementById("Reporter_Name").value,
+                Dispute: document.getElementById("Dispute").value,
+                User_Type: document.getElementById("User_Type").value,
+                A_Name: document.getElementById("A_Name").value,
+                A_Email: document.getElementById("A_Email").value,
+                User_File: document.getElementById("User_File").value,
+                User_Message: document.getElementById("User_Message").value, 
+            }
+
+            )
+        }
+
+        /*
+        function getData() {
+            firebase.database().ref('/').once('value', function(snapshot) {
+                snapshot.forEach(function(childSnapshot)
+                {
+                    var childkey = childSnapshot.key
+                    var childData = childSnapshot.val();
+                    document.getElementById("data").innerHTML = childData['ReporterName'] + "," + childData['Reporter_Email'];
+                })
+            })
+        }
+        */
+      </script>
     <title>Report An Issue</title>
 </head>
 <body>
@@ -29,43 +83,64 @@
             </div>
         </nav>
     </header>
+    
     <div class="hero">
+        <div class="Title">
+            <h2>Have Someting to Report?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti quos quasi dicta? Quas doloribus laboriosam tenetur, excepturi quia magnam sapiente aliquid eius repudiandae voluptate omnis harum dolore impedit optio.</p>
+        </div>     
         <form>
-            <div class="input-group">34
-                <input type="text" id="name" required placeholder="Your Name">
+            <div class="input-group">
+                <input type="text" id="Reporter_Name" required placeholder="Full Name">
                 <label for="name"></label>
             </div>
             <div class="input-group">
-                <input type="text" id="number" required placeholder="Email">
+                <input type="text" id="Reporter_Email" required placeholder="Email">
                 <label for="name"></label>
             </div>
             <div class="Option-group">
-                <input type="text" id="number" required placeholder="Email">
+                <input type="text" id="Reporter_Username" required placeholder="Username">
                 <label for="name"></label>
             </div>
         
             <div class="Option-group">
                 <label for="DisputeType">Dispute Types</label><br><br>
-                <input type="radio" id="Fraud" name="Option" value="FraudelentActivity">
-                <label for="Owner">Fraudulent Activity</label><br>            
-                <input type="radio" id="Fraud" name="Option" value="Abuse">
-                <label for="Minder">Abuse</label><br>
-                <input type="radio" id="Fraud" name="Option" value="Third">
-                <label for="Other">Third</label><br><br>
+                <input type="radio" id="Dispute" name="Option" value="FraudelentActivity">
+                <label for="Fraud">Fraudulent Activity</label><br>            
+                <input type="radio" id="Dispute" name="Option" value="Abuse">
+                <label for="Abuse">Abuse</label><br>
+                <input type="radio" id="Dispute" name="Other" value="Other">
+                <label for="Other">Other</label><br><br>
             </div>
 
             <div class="Other-group">
-                <input type="radio" id="PetMinder" name="Choice" value="PetOwner">
-                <label for="Owner">PetOwner</label><br>            
-                <input type="radio" id="PetOwner" name="Choice" value="PetMinder">
-                <label for="Minder">PetMinder</label><br>
-                <input type="radio" id="Other" name="Choice" value="Other">
+                <label for="Identification">Type of User</label><br><br>
+                <input type="radio" id="User_Type" name="Choice" value="PetOwner">
+                <label for="PetMinder">PetOwner</label><br>            
+                <input type="radio" id="User_Type" name="Choice" value="PetMinder">
+                <label for="PetOwner">PetMinder</label><br>
+                <input type="radio" id="User_Type" name="Choice" value="Other">
                 <label for="Other">Other</label><br><br>
             </div>
+
             <div class="input-group">
-                <textarea name="message" rows="10" cols="30" placeholder="Type your message"></textarea>
+                <input type="text" id="A_Name" required placeholder="Accused Name">
+                <label for="name"></label>
             </div>
-            <button type="submit">Submit</button>
+
+            <div class="input-group">
+                <input type="text" id="A_Email" required placeholder="Accused Email">
+                <label for="name"></label>
+            </div>
+
+            <div class="File-Submit">
+                <label for="myfile">Evidence</label>
+                <input type="file" id="User_File" name="myfile" multiple><br><br>
+            </div>
+            <div class="input-group">
+                <textarea name="message" id = "User_Message" rows="10" cols="30" placeholder="Type your message"></textarea>
+            </div>
+            <button onclick = "writeData">Submit</button>
         </form>
     </div>
 </body>
