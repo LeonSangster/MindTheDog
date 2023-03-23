@@ -7,6 +7,11 @@
     margin-bottom: 0;
 }
 
+body{
+    background-color: black;
+    color: white;
+    
+}
 .Roption{
     margin-top: 10%;
 }
