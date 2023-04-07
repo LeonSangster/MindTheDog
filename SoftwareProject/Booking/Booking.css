@@ -1,0 +1,104 @@
+body{
+    position: relative;
+}
+
+.DivLabels, .DivLabelsForTime{
+    position:inherit;
+    padding-top: 10%;
+    margin-left: 5%;
+    color: black;
+}
+
+.DivLabelsForTime{
+    margin-top: -50%;
+    padding-top: 2%;
+}
+.back{
+    width:150%;
+    background-image:linear-gradient(rgba(0,0,0,0.7),#3551b5),url(../images/Back.png);
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-header{
+    font-size: x-large;
+    font-weight: bolder;
+    padding-bottom: 0.2rem;
+    border-bottom: solid grey;
+    margin: 1.5rem;
+    text-align: center;
+}
+form{
+    max-width: 800px; /* Adjust the value to the desired width */
+  margin: 0 auto;
+   
+    border: solid grey 0.1rem;
+    position: fixed;
+    background-color: lightgray;
+    color: black;
+    position: relative;
+    
+}
+
+.formGroupDivs{
+    width: 100%;
+    padding: 0.2rem;
+    margin: 0.5rem;
+    color: black;
+}
+
+.formGroupDivs > input{
+    width: 95%;
+    height: 2rem;
+    margin-top: 0.4rem;
+    color: black;
+}
+
+.formGroupDivs button{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.formGroupDivs button:hover{
+    color: white;
+    background-color: grey;
+}
+.textarea{
+    color: black;
+}
+
+.Submit{
+    color: black;
+}
+.footer{
+    background-color: wheat;
+    margin-bottom: -1%;
+    padding: 0.65%;
+    font-size: large;
+}
+
+.BookingList{
+    list-style-type: None;
+    display: block;
+    font-size: large;
+    margin-left: 10%;
+    padding-top:5%;
+    margin-bottom: 8%;
+}
+.ChoicesForTime{
+    margin-top: -30%;
+    transform: scale(2);
+    margin-left: 25%;
+    margin-bottom: 1%;
+}
+.Times{
+    padding: 1%;
+}
+.PetMinderSelection{
+    width: 2rem;
+}
+

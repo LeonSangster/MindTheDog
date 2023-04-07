@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Booking/Booking.css">
+    <link rel="stylesheet" href="../main.css">
+    <script src="/SoftwareProject/report/Report.js"></script>
+    <title>Booking Page</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <label class="Logo"><a href="Homepage.html">MindThePet</a></label>
+            <a href="#"  class="Toggle-btn">
+                <span class="Bar"></span>
+                <span class="Bar"></span>/
+                <span class="Bar"></span>//
+            </a>
+            <div class="navbar-Links">
+                <ul>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="Report.html">Misconduct</a></li>
+                    <li><a href="SoftwareProject\login\login.html">Sign up</a></li>
+                    <li class="navbar__btn "><a href="login.html" class=button>Sign-in</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div>  
+        <form id="ReportForm">
+          <legend class="form-header">Make a Booking</legend>
+          <div class="formGroupDivs">
+            <label class="DivLabels" for="Pet">Choose a Pet:</label>
+            <select name = "dropdown">
+              <option value = "P0" selected>Dog</option>
+              <option value = "P1">Chewbacca</option>
+              <option value = "P2">Woody</option>
+           </select>
+          </div>
+          <div class="formGroupDivs">
+              <label class="DivLabels"for="check-in">Check-in Date:</label>
+              <input type="date" id="check-in" name="check-in" required>
+            </div>
+            <div class="formGroupDivs">
+              <label class="DivLabels"for="check-out">Check-out Date:</label>
+              <input type="date" id="check-out" name="check-out" required>
+            </div>
+            <div class="formGroupDivs">
+              <label class="DivLabels"for="check-in">If Booking is Same Day:</label>
+              <ul class="BookingList">
+                <li class="Times">1 hour </li>
+                <input class="ChoicesForTime" type="radio" id="User_Type" name="Choice" >
+                <li class="Times">2 hour </li>
+                <input class="ChoicesForTime" type="radio" id="User_Type" name="Choice" >
+                <li class="Times">3 hour </li>
+                <input class="ChoicesForTime" type="radio" id="User_Type" name="Choice" >
+                <li class="Times">4 hour </li>
+                <input class="ChoicesForTime" type="radio" id="User_Type" name="Choice" >
+                <li class="Times">5 Hours+ </li>
+                <input class="ChoicesForTime" type="radio" id="User_Type" name="Choice" >
+
+            </div>
+            <div class="formGroupDivs">
+              <label class="DivLabels"for="PetMinder">Choose a Pet Minder:</label>
+              <select class="PetMinderSeletion" name = "dropdown">
+                <option value = "PM0" selected>0</option>
+                <option value = "PM1">1</option>
+                <option value = "PM2">2</option>
+             </select>
+            </div>
+            <div class="input-group">
+              <textarea class="textarea" name="message" id = "User_Message" rows="5" cols="25" placeholder="Additional Instructions"></textarea>
+          </div>
+            <button class="Submit" type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="footer">
+    <footer>
+      <h6>Contact Group 21 for any queries</h6>
+  </footer>
+</div>
+</body>
+</html>
