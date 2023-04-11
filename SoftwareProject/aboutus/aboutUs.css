@@ -1,0 +1,22 @@
+.AboutUsDiv{
+    background-color: lightgray;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: x-large;
+    margin-top: 5%;
+    padding: 7%;
+}
+
+footer{
+    margin-top: 7.2%;
+    font-size: large;
+    background-color: wheat;
+    padding: 0.2%;
+    text-align: left;
+}
+.Intro{
+    font-weight: bold;
+    font-size: xx-large;
+    margin-top: -10%;
+    margin-bottom: 5%;
+}
